@@ -17,7 +17,8 @@ def helper(message):
 def send(message):
 	try:
 		m = message.text.split(',')
-		result = float(m[0]) ** float(m[1])
+		#result = float(m[0]) ** float(m[1])
+		result  = 1/2*(float(m[0])*float(m[1]))
 	except ValueError:
 		result = 'Enter a number, not a letter'
 	except:
